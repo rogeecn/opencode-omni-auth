@@ -1,4 +1,4 @@
-# Agent Guidelines for opencode-omniroute-auth
+# Agent Guidelines for oc-omniroute-auth
 
 This file provides guidelines for AI agents operating in this repository.
 

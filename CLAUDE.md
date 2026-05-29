@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-`opencode-omniroute-auth` is an OpenCode authentication plugin for the OmniRoute API. It provides a `/connect omniroute` command, API-key auth, dynamic model fetching from `/v1/models`, and combo model capability enrichment.
+`oc-omniroute-auth` is an OpenCode authentication plugin for the OmniRoute API. It provides a `/connect omniroute` command, API-key auth, dynamic model fetching from `/v1/models`, and combo model capability enrichment.
 
 ## Common Commands
 
@@ -162,7 +162,7 @@ npm publish --otp <CODE>
 
 - Confirm the package version on npm:
   ```bash
-  npm view opencode-omniroute-auth version
+  npm view oc-omniroute-auth version
   ```
 - Confirm the GitHub release exists:
   ```bash

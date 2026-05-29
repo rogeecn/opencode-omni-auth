@@ -48,7 +48,7 @@ All notable changes to this project are documented in this file.
 - Added dual provider API mode support (`chat` and `responses`) through `provider.omniroute.options.apiMode`.
 - Added `OmniRouteApiMode` type and re-exported it for consumers.
 - Added `OMNIROUTE_ENDPOINTS.RESPONSES` constant.
-- Added `runtime` subpath export (`opencode-omniroute-auth/runtime`) for helper APIs and runtime constants.
+- Added `runtime` subpath export (`oc-omniroute-auth/runtime`) for helper APIs and runtime constants.
 - Added export validation script (`check:exports`) to enforce plugin-loader-safe root exports before publish.
 - Added release planning and handover documentation (`docs/responses-api-evaluation-plan.md`, `docs/session-handover.md`).
 
@@ -56,7 +56,7 @@ All notable changes to this project are documented in this file.
 
 - Changed provider bootstrap logic to normalize and validate `apiMode` values, defaulting invalid values to `chat` with warnings.
 - Changed package root runtime export shape to plugin-only exports (`default` + `OmniRouteAuthPlugin`) for OpenCode loader compatibility.
-- Changed programmatic helper import path from package root to `opencode-omniroute-auth/runtime`.
+- Changed programmatic helper import path from package root to `oc-omniroute-auth/runtime`.
 - Updated README configuration and troubleshooting documentation to cover `apiMode`, npm plugin loading behavior, and runtime helper import path.
 - Updated TypeScript build config to include `runtime.ts`.
 
@@ -68,7 +68,7 @@ All notable changes to this project are documented in this file.
 
 - Verified `npm run prepublishOnly` passes (`clean`, `build`, and `check:exports`).
 - Verified built root module exports only callable plugin functions.
-- Verified runtime helpers/constants remain available through `opencode-omniroute-auth/runtime`.
+- Verified runtime helpers/constants remain available through `oc-omniroute-auth/runtime`.
 - Verified packed local tarball (`1.0.3`) installs and exposes the expected export shape.
 
 ## [1.0.2] - 2026-03-01

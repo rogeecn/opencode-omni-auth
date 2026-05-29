@@ -16,6 +16,7 @@ const CONFIG = {
   apiKey: 'test-key',
   apiMode: 'chat',
   modelCacheTtl: 60000,
+  modelsDev: { enabled: false },
 };
 
 afterEach(() => {
@@ -26,7 +27,14 @@ afterEach(() => {
 test('fetchModels caches successful responses', async () => {
   let calls = 0;
 
-  global.fetch = async () => {
+  global.fetch = async (url) => {
+    if (String(url).endsWith('/api/combos')) {
+      return new Response(JSON.stringify({ combos: [] }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
     calls += 1;
     return new Response(
       JSON.stringify({
@@ -53,7 +61,14 @@ test('fetchModels caches successful responses', async () => {
 test('refreshModels forces refetch', async () => {
   let calls = 0;
 
-  global.fetch = async () => {
+  global.fetch = async (url) => {
+    if (String(url).endsWith('/api/combos')) {
+      return new Response(JSON.stringify({ combos: [] }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
     calls += 1;
     return new Response(
       JSON.stringify({

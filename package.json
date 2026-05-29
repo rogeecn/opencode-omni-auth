@@ -1,5 +1,5 @@
 {
-  "name": "opencode-omniroute-auth",
+  "name": "oc-omniroute-auth",
   "version": "1.1.2",
   "description": "OpenCode authentication plugin for OmniRoute API with /connect command and dynamic model fetching",
   "type": "module",
@@ -41,11 +41,11 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alph4d0g/opencode-omniroute-auth.git"
+    "url": "git+https://github.com/rogeecn/opencode-omni-auth.git"
   },
-  "homepage": "https://github.com/Alph4d0g/opencode-omniroute-auth#readme",
+  "homepage": "https://github.com/rogeecn/opencode-omni-auth#readme",
   "bugs": {
-    "url": "https://github.com/Alph4d0g/opencode-omniroute-auth/issues"
+    "url": "https://github.com/rogeecn/opencode-omni-auth/issues"
   },
   "license": "MIT",
   "peerDependencies": {

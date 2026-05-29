@@ -52,7 +52,7 @@ npm publish --otp <CODE>
 - Verify npm package:
 
 ```bash
-npm view opencode-omniroute-auth version
+npm view oc-omniroute-auth version
 ```
 
 - Verify GitHub release exists:

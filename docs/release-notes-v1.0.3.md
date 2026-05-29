@@ -4,7 +4,7 @@
 
 - Fixes npm plugin loading in OpenCode by limiting root runtime exports to plugin functions only.
 - Adds optional API mode selection (`chat` and `responses`) with safe normalization and compatibility defaults.
-- Introduces `opencode-omniroute-auth/runtime` for programmatic helper and constant imports.
+- Introduces `oc-omniroute-auth/runtime` for programmatic helper and constant imports.
 
 ## What Changed
 
@@ -24,7 +24,7 @@
 
 ### Runtime Subpath
 
-- Added `opencode-omniroute-auth/runtime` export for:
+- Added `oc-omniroute-auth/runtime` export for:
   - model helpers (`fetchModels`, `refreshModels`, `clearModelCache`, `getCachedModels`, `isCacheValid`)
   - constants (`OMNIROUTE_DEFAULT_MODELS`, `MODEL_CACHE_TTL`, `OMNIROUTE_ENDPOINTS`, etc.)
 
@@ -38,9 +38,9 @@
 
 - `npm run prepublishOnly` passes (`clean`, `build`, `check:exports`).
 - Local packed tarball installs with expected export shape.
-- Runtime helper API remains available through `opencode-omniroute-auth/runtime`.
+- Runtime helper API remains available through `oc-omniroute-auth/runtime`.
 
 ## Upgrade Notes
 
-- If importing helper APIs from package root, update imports to `opencode-omniroute-auth/runtime`.
+- If importing helper APIs from package root, update imports to `oc-omniroute-auth/runtime`.
 - Existing plugin configuration remains backward compatible; `apiMode` defaults to `chat`.
