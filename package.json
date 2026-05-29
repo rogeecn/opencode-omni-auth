@@ -1,5 +1,5 @@
 {
-  "name": "@rogee/oc-omniroute-auth",
+  "name": "myomni-auth",
   "version": "1.1.2",
   "description": "OpenCode authentication plugin for OmniRoute API with /connect command and dynamic model fetching",
   "type": "module",
